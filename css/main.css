@@ -1,0 +1,782 @@
+/* Table of content
+
+1. Global styles
+2. Header
+3. Landing section
+4. Second section
+5. Properties
+6. Designe
+7. Pods
+8. click-and-brush
+9. fluid-1
+10. fluid-2
+11. backgrounds
+12. footer
+
+13 media
+
+*/
+/* =================
+   1. Global styles
+   ================*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #212529;
+}
+
+canvas {
+  z-index: -100;
+}
+
+.container {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  text-align: center;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ==================
+     2. Header
+   ================*/
+header {
+  background-color: #000;
+  width: 100%;
+  /* padding: 0 20px; */
+}
+
+nav {
+  max-width: 540px;
+  margin: 0 auto;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.nav-text a {
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  color: #212529;
+  background-color: #c29dfd;
+  cursor: pointer;
+  transition: all .1s linear;
+  margin-left: 8px;
+}
+
+.nav-text a:hover {
+  color: #fff;
+  background-color: #663399;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 18px;
+  cursor: pointer;
+}
+
+/* ========================
+     3. Landing section
+   ========================*/
+.landing .container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 64px 16px 48px;
+  margin-top: 0;
+}
+
+.landing h2 {
+  text-align: center;
+}
+
+.landing img {
+  max-width: 88%;
+  margin: 24px 0;
+}
+
+.landing-text {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.landing-text a {
+  display: block;
+  border: 1px solid #6c757d;
+  border-width: thin;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  transition: all .1s linear;
+}
+
+.landing-text a:hover {
+  color: #fff;
+  background-color: #663399;
+}
+
+
+/* ========================
+     4. Second section
+   ========================*/
+section.second {
+  background-color: #fff;
+}
+
+.second .container-second-text>h2:first-child {
+  font-size: 24px;
+}
+
+.second .container-second-text>h2:last-of-type {
+  margin: 10px 0 8px;
+}
+
+.second p {
+  padding: 0 15px;
+}
+
+/* ========================
+     5. Properties
+   ========================*/
+.properties {
+  background-color: #f8f9fa;
+}
+
+.odrer-1-sm {
+  order: -1;
+  margin: 30px 0;
+}
+
+.properties .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.properties .col h3 {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 22.4px;
+  margin: 48px 0 8px;
+}
+
+.properties .col p {
+  margin: 0 0 16px;
+}
+
+.properties .col-fluid {
+  margin: 60px 0 50px;
+}
+
+/* ========================
+     6. Designe
+   ========================*/
+section.designe {
+  background-color: #fff;
+}
+
+.designe .container>h2:first-child {
+  font-size: 24px;
+}
+
+.designe .container>h2:last-of-type {
+  margin: 8px 0 24px;
+  font-size: 48px;
+  padding: 0 10px;
+}
+
+.designe .brush-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.designe .brush-type h2 {
+  font-size: 24px;
+  margin: 0 14px;
+  position: relative;
+}
+
+.designe .brush-type h2::after {
+  content: '3600 bristles';
+  position: absolute;
+  font-size: 15px;
+  right: 0;
+  top: 130%;
+}
+
+.designe .brush-type h2:last-child::after {
+  content: '4800 bristles';
+}
+
+/* ========================
+           7. Pods
+   ========================*/
+.pods h2:first-child {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.pods {
+  background-color: #f8f9fa;
+}
+
+/* ========================
+       8. click-and-brush
+   ========================*/
+section.click-and-brush {
+  background-color: #fff;
+}
+
+.click-and-brush h2:last-of-type {
+  margin: 8px 0;
+}
+
+.click-and-brush p {
+  margin-bottom: 48px;
+}
+
+.pods .container .pods-img img {
+  max-width: 100%;
+}
+
+/* ========================
+       9. fluid-1
+   ========================*/
+.fluid-1 {
+  background-color: #ac2029;
+}
+
+.fluid-1 .container {
+  margin-bottom: 0;
+}
+
+.fluid-1 h2 {
+  font-size: 30px;
+  color: #fff;
+  padding: 0 16px;
+}
+
+/* ========================
+          10. fluid-2
+  ========================*/
+.fluid-2 {
+  background-color: #663399;
+}
+
+.fluid-2 .container {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.fluid-2 h2 {
+  font-size: 30px;
+  color: #fff;
+  padding: 0 16px;
+}
+
+/* ========================
+      11. backgrounds
+   ========================*/
+.bgd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.bgd h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.bgd-1 {
+  background-image: url(../img/imx-having-fun.png);
+}
+
+.bgd-2 {
+  background-image: url(../img/imx-workout.jpg);
+}
+
+.bgd-3 {
+  background-image: url(../img/imx-moments.jpg);
+}
+
+.bgd-4 {
+  background-image: url(../img/imx-travel.jpg);
+}
+
+.bgd-5 {
+  background-image: url(../img/imx-freedom.jpg);
+}
+
+/* ========================
+         12. footer
+  ========================*/
+footer {
+  background-color: #f8f9fa;
+}
+
+.footer-container {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 35px 20px;
+}
+
+footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-links {
+  flex: 0 0 48%;
+}
+
+footer h3 {
+  font-weight: lighter;
+  padding: 0 15px;
+}
+
+footer ul {
+  padding: 0 15px;
+}
+
+footer li a {
+  color: #6c757d;
+  line-height: 24px;
+}
+
+.ivmax-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 4;
+  flex: 0 0 100%;
+  font-size: 16px;
+}
+
+.ivmax-logo p {
+  line-height: 20px;
+}
+
+.ivmax-logo span {
+  font-size: 12.8px;
+  color: #6c757d;
+}
+
+.ivmax-logo img {
+  margin-right: 10px;
+}
+
+.footer-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 5;
+  flex: 0 0 100%;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-fluid img {
+  margin: 0 10px;
+}
+
+/* ========================
+         13. media
+  ========================*/
+/* // Small devices (landscape phones, 557px and up) */
+@media (min-width: 557px) {
+
+  /* ===== 3. Landing section =====*/
+  .landing-text a {
+    display: inline-block;
+    padding: 8px 12px;
+  }
+
+  .properties .col h3 {
+    text-align: left;
+  }
+
+  .properties .col-aligne-right h3 {
+    text-align: right;
+  }
+  /* ===== 11. backgrounds =====*/
+  .bgd {
+    height: 400px;
+  }
+
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  nav,
+  .container,
+  .footer-container {
+    max-width: 768px;
+  }
+
+  h2 {
+    font-size: 56px;
+  }
+
+  #h2-smaller {
+    font-size: 32px;
+  }
+
+  /* ===== 3. Landing section =====*/
+  .landing h1 {
+    font-size: 96px;
+  }
+
+  .landing h2 {
+    font-size: 56px;
+  }
+
+  .landing-text>div {
+    max-width: 65%;
+    margin: 15px auto;
+  }
+
+  .landing-text>div>p:first-child {
+    text-align: left;
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  /* ===== 4. Second section =====*/
+  .second .container-second-text {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .second .container-second-text h2,
+  .second .container-second-text p {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .second .container-second-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
+  /* ===== 5. Properties =====*/
+  .properties .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .properties .col {
+    flex: 0 0 20%;
+  }
+
+  .properties .col-aligne-right {
+    align-items: flex-end;
+  }
+
+  .properties .col-aligne-left div {
+    text-align: left;
+  }
+
+  .properties .col h3 {
+    font-size: 28px;
+  }
+
+  .properties .col-img {
+    text-align: center;
+    order: 0;
+    flex: 0 0 46%;
+    padding: 0 10px;
+  }
+
+  .col-aligne-left p {
+    text-align: left;
+  }
+
+  .col-aligne-right h3,
+  .col-aligne-right p {
+    text-align: right;
+  }
+
+  .properties .col-fluid {
+    flex: 0 0 100%;
+    max-width: 60%;
+  }
+
+  /* ===== 6. Designe =====*/
+  .designe .container>h2:last-of-type {
+    font-size: 88px;
+  }
+
+  .designe .container p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .designe .brush-type h2::after {
+    left: 8px;
+    text-align: left;
+  }
+
+  /* ===== 7. Pods =====*/
+  .pods .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .pods .container>h2:first-child,
+  .pods .container>h2:last-of-type {
+    flex: 0 0 100%;
+  }
+
+  .pods .container .pods-img {
+    flex: 0 0 45%;
+  }
+
+  .pods .container .pods-text {
+    flex: 0 0 45%;
+  }
+
+  .pods .container .pods-text p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  /* ===== 8. click-and-brush =====*/
+  .click-and-brush .container {
+    align-items: flex-end;
+  }
+
+  .click-and-brush h2:first-of-type {
+    font-size: 40px;
+  }
+
+  .click-and-brush h2:last-of-type {
+    font-size: 72px;
+  }
+
+  .click-and-brush p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .click-and-brush img {
+    margin-bottom: 50px;
+  }
+
+  /* ===== 9. fluid-1 =====*/
+  .fluid-1 h2 {
+    font-size: 56px;
+    max-width: 80%;
+  }
+
+  /* ===== 10. fluid-2 =====*/
+  .fluid-2 h2 {
+    font-size: 72px;
+  }
+
+  /* ===== 11. backgrounds =====*/
+  .bgd {
+    position: relative;
+  }
+
+  .bgd h2 {
+    font-size: 56px;
+    position: absolute;
+  }
+
+  .bgd-fixed {
+    height: 100vh;
+    background-attachment: fixed;
+  }
+
+  .bgd-1 {
+    height: 80vh;
+  }
+
+  .bgd-1 .fun {
+    font-size: 88px;
+    bottom: 10%;
+  }
+
+  .bgd-2 .workout {
+    left: 20%;
+    top: 50%;
+  }
+
+  .bgd-3 .moment {
+    bottom: 30%;
+  }
+
+  .bgd-4 .travel {
+    right: 20%;
+  }
+
+  .bgd-5 .freedom {
+    top: 20%;
+    font-size: 72px;
+  }
+
+  /* ===== 12. footer =====*/
+  footer .footer-container {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+
+  .ivmax-logo {
+    order: 0;
+    flex: 0 0 17%;
+    margin-top: 10px;
+  }
+
+  .footer-links {
+    flex: 0 0 17%;
+  }
+}
+
+/* // ======================== */
+@media (min-width: 992px) {
+
+  nav,
+  .container,
+  .footer-container {
+    max-width: 960px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .landing-text>div {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+
+  .properties .container {
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+
+  .properties .col {
+    flex: 0 0 25%;
+  }
+
+  .properties .col-fluid {
+    margin: 0 auto 80px;
+  }
+
+  .bgd-1 {
+      height: 100vh;
+  }
+}
+
+/* // Large devices (desktops, 1024px and up) */
+@media (min-width: 1200px) {
+
+  nav,
+  .container,
+  .footer-container {
+    max-width: 1140px;
+  }
+
+  .pods .container {
+    justify-content: center;
+  }
+
+  .pods .pods-img {
+    flex: 0 0 25%;
+    text-align: center;
+  }
+
+  .pods .container>div.pods-text {
+    flex: 0 0 35%;
+  }
+
+  footer .footer-container {
+    margin: 0 auto;
+  }
+}
+
+/* // Extra large devices (large desktops, 1281px and up) */
+@media (min-width: 1281px) {}
